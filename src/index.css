@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.dark {
+  @apply text-white bg-gradient-to-r from-[#141927] to-[#141955];
+}
+
+.light {
+  @apply text-black bg-gradient-to-r from-[#fef9d7] to-[#d299c2];
+}
+
+.component-dark {
+  @apply text-white bg-[#263343];
+}
+
+.component-light{
+  @apply text-black bg-white
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a0aec0;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #718096;
+}
