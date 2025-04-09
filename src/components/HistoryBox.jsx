@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 const HistoryBox = ({showHistory, searchHistory, setShowHistory}) => {
   return (
     <div
-      className={`w-full bg-[#263343] absolute top-12 rounded-md p-4 flex flex-col gap-3 ${
+      className={`w-full bg-[#263343] text-white absolute top-12 rounded-md p-4 flex flex-col gap-3 ${
         showHistory ? "" : "hidden"
       }`}
     >
