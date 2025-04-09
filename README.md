@@ -1,12 +1,56 @@
-# React + Vite
+# 🌦️ Weather Dashboard Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Features
 
-Currently, two official plugins are available:
+- Search weather by city name
+-  Live temperature, humidity, wind speed, and conditions
+- 5-day / 3-hour forecast display
+-  Dark and Light mode toggle
+-  Stores last 5 searched cities in history
+-  API error and loading state handling
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology      |        Purpose                   |
+|-----------------|-----------------------------------|
+| React.js        | UI library for building the frontend |
+| Tailwind CSS    | Utility-first CSS framework       |
+| Axios           | For making HTTP API requests      |
+| React Hot Toast | For showing user-friendly toasts  |
+| OpenWeatherMap API | For fetching weather data       |
+| LocalStorage    | For persisting search history and theme mode |
+
+---
+
+## Setup Instructions
+- Cone the repo
+```
+git clone https://github.com/AbhiK2244/Zynetic-Frontend-Assignment.git 
+ ```
+- Navigate to root directory
+- Install the dependencies
+```
+npm install
+```
+- Create the .env file and add
+```
+VITE_API_KEY=YOUR_API_KEY
+```
+- Run the project
+```
+npm run dev
+```
+
+## API integration Details
+- 1000 rate limit per day
+- My Api key = 6073b417d5c87c0930cc271d404330a3
+- Api used:
+```
+for real-time data:
+https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric
+
+for 5 days/ 3hrs forecast data:
+https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=${apiKey}&units=metric
+```
