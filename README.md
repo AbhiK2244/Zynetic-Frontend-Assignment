@@ -54,3 +54,8 @@ https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=
 for 5 days/ 3hrs forecast data:
 https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=${apiKey}&units=metric
 ```
+
+## Project Live at
+```
+https://zynetic-frontend-assignment.vercel.app/
+```
